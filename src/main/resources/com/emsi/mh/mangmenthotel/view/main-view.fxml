@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainBorderPane" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #ecf0f1;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.emsi.mh.mangmenthotel.controller.MainController">
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="700.0" prefWidth="260.0" spacing="5.0" style="-fx-background-color: linear-gradient(to bottom, #2c3e50, #34495e); -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 15, 0, 5, 0);" BorderPane.alignment="CENTER">
+         <children>
+            <!-- Header Section -->
+            <VBox alignment="CENTER" spacing="5.0" style="-fx-padding: 30 20 30 20;">
+               <children>
+                  <Label text="🏨" style="-fx-font-size: 48;">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Label>
+                  <Label text="Gestion Hôtelière" textFill="WHITE" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label text="Management System" textFill="#bdc3c7" textAlignment="CENTER">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+
+            <Separator style="-fx-background-color: rgba(255,255,255,0.2);">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+               </VBox.margin>
+            </Separator>
+
+            <!-- Navigation Menu -->
+            <VBox spacing="8.0" style="-fx-padding: 10 15 10 15;">
+               <children>
+                  <Label text="NAVIGATION" textFill="#95a5a6" style="-fx-font-weight: bold; -fx-font-size: 11;">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="10.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+
+                  <Button fx:id="btnClients" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showClients"
+                          style="-fx-background-color: transparent; -fx-text-fill: white; -fx-alignment: CENTER_LEFT; -fx-background-radius: 8; -fx-cursor: hand; -fx-font-size: 14;"
+                          text="👤  Clients" styleClass="nav-button">
+                     <padding>
+                        <Insets bottom="12.0" left="20.0" right="20.0" top="12.0" />
+                     </padding>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+
+                  <Button fx:id="btnChambres" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showChambres"
+                          style="-fx-background-color: transparent; -fx-text-fill: white; -fx-alignment: CENTER_LEFT; -fx-background-radius: 8; -fx-cursor: hand; -fx-font-size: 14;"
+                          text="🛏️  Chambres" styleClass="nav-button">
+                     <padding>
+                        <Insets bottom="12.0" left="20.0" right="20.0" top="12.0" />
+                     </padding>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+
+                  <Button fx:id="btnReservations" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showReservations"
+                          style="-fx-background-color: transparent; -fx-text-fill: white; -fx-alignment: CENTER_LEFT; -fx-background-radius: 8; -fx-cursor: hand; -fx-font-size: 14;"
+                          text="📅  Réservations" styleClass="nav-button">
+                     <padding>
+                        <Insets bottom="12.0" left="20.0" right="20.0" top="12.0" />
+                     </padding>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+
+                  <Button fx:id="btnFactures" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showFactures"
+                          style="-fx-background-color: transparent; -fx-text-fill: white; -fx-alignment: CENTER_LEFT; -fx-background-radius: 8; -fx-cursor: hand; -fx-font-size: 14;"
+                          text="💰  Factures" styleClass="nav-button">
+                     <padding>
+                        <Insets bottom="12.0" left="20.0" right="20.0" top="12.0" />
+                     </padding>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+
+                  <Button fx:id="btnPlaintes" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showPlaintes"
+                          style="-fx-background-color: transparent; -fx-text-fill: white; -fx-alignment: CENTER_LEFT; -fx-background-radius: 8; -fx-cursor: hand; -fx-font-size: 14;"
+                          text="📝  Plaintes" styleClass="nav-button">
+                     <padding>
+                        <Insets bottom="12.0" left="20.0" right="20.0" top="12.0" />
+                     </padding>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+
+            <!-- Spacer -->
+            <VBox VBox.vgrow="ALWAYS" />
+
+            <Separator style="-fx-background-color: rgba(255,255,255,0.2);">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+               </VBox.margin>
+            </Separator>
+
+            <!-- Logout Button -->
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleLogout"
+                    style="-fx-background-color: #c0392b; -fx-text-fill: white; -fx-alignment: CENTER; -fx-background-radius: 8; -fx-cursor: hand;"
+                    text="🚪  Déconnexion">
+               <padding>
+                  <Insets bottom="14.0" top="14.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="25.0" left="20.0" right="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>
