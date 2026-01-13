@@ -1,3 +1,19 @@
+
+<p align="center">
+  <img src="" alt="Projet de Gestion Hôtelière" width="300"/>
+</p>
+
+# Projet de Gestion Hôtelière
+## Compte Rendu Global
+
+### 👤 Fait par
+- **Adam Labrahmi**
+
+### 🎓 Encadré par
+- Mr. Abderrahim Larhlimi
+
+### 📅 Année universitaire
+- 2024 – 2025
 # Compte Rendu Global : Projet de Gestion Hôtelière
 
 ## 1. Introduction
