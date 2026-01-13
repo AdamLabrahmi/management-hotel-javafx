@@ -1,9 +1,10 @@
 
-<p align="center">
-  <img src="" alt="Projet de Gestion Hôtelière" width="300"/>
+<p>
+  <img src="mee.jpeg" alt="Projet de Gestion Hôtelière" width="300"/>
 </p>
 
 # Projet de Gestion Hôtelière
+
 ## Compte Rendu Global
 
 ### 👤 Fait par
